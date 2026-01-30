@@ -10,7 +10,7 @@ def fetch_crypto_prices():
     if response.status_code == 200:
         return response.json()
     else:
-        return {crypto: {"usd": "Error fetching price"} for crypto in ["Bitcoin", "Ethereum", "Dogecoin", "BinanceCoin", "Cardano", "Solana", "Polkadot", "Shiba Inu", "Litecoin", "Ripple"]}
+        return {crypto: {"usd": "Error fetching price"} for crypto in ["bitcoin", "ethereum", "dogecoin", "binancecoin", "cardano", "solana", "polkadot", "shiba-inu", "litecoin", "ripple"]}
 
 # Function to fetch the price of gold
 def fetch_gold_price():
